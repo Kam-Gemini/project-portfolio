@@ -51,7 +51,8 @@ body {
     align-items: center; /* Center items horizontally */
     height: calc(100vh - 80px); /* Adjust height to account for the navbar */
     text-align: center; /* Center text alignment */
-    margin-top: -30px;
+    margin-top: -50px;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 .landing-page h1 {
     font-size: 2.5rem; /* Font size */
@@ -89,7 +90,7 @@ body {
     column-gap: 40px;
     row-gap: 40px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .logos {
@@ -104,13 +105,15 @@ body {
     height: calc(100vh - 80px); /* Adjust height to account for the navbar */
     text-align: center; /* Center text alignment */
     background-color: rgba(0, 0, 0, 0.65);
-    padding: 0 460px;
+    padding: 0 520px;
+    text-align: justify;
 }
 
 .about-section img {
     width: 200px;
     border-radius: 50%; /* Circular image */
     border: 2px solid #480ca8; /* White border */
+    margin: 10px 0 20px 0; /* Margin for spacing */
 }
 
 .projects-section {
@@ -126,9 +129,15 @@ body {
 
 .projects-section img {
     width: 600px;
+    height:370px;
+    object-fit: cover;
     border-radius: 5px;
     border: 2px solid white; /* White border */
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.projects-section a {
+    text-decoration: none;
 }
 
 .carousel {
@@ -193,6 +202,7 @@ body {
 .contact-icons {
     border-bottom: 1px solid white; /* White border */
     padding-bottom: 20px;
+    margin: 10px 0 20px 0;
 }
 
 .contact-icons img {
@@ -207,7 +217,7 @@ body {
     width: 600px; /* Limit the form width */
     margin: 0 auto; /* Center the form horizontally */
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
@@ -216,6 +226,7 @@ body {
     font-size: 1rem;
     font-weight: bold;
     color: white; /* Label text color */
+    text-align: left;
 }
 
 .contact-form input,
