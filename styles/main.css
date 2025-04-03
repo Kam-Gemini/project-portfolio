@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100%; /* Ensure both html and body take up full height */
+    display: flex;
+    flex-direction: column;
+    font-family: "Rubik";
+    color: white;
+}
+
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background: url('../assets/Background.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    height: 100vh; /* Full viewport height */
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding */
+    background-color: rgba(0, 0, 0, 0.95); /* Semi-transparent background */
+}
+
+.navbar-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    width: 100%; /* Full width */
+    margin: 0 200px;
+    font-size: 18px; /* Font size */
+}
+
+.navbar-container a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.landing-page{
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: calc(100vh - 80px); /* Adjust height to account for the navbar */
+    text-align: center; /* Center text alignment */
+    margin-top: -30px;
+}
+.landing-page h1 {
+    font-size: 2.5rem; /* Font size */
+    margin: 0; /* Remove default margin */
+}
+
+.landing-page img {
+    width: 50px;
+}
+
+.skills-section img {
+    height: 40px;
+}
+
+.icons {
+    display: flex; /* Use flexbox for layout */
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 2px solid white
+}
+
+.skills-section {
+    display: none; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: calc(100vh - 80px); /* Adjust height to account for the navbar */
+    text-align: center; /* Center text alignment */
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.logos-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logos {
+    display: flex;
+}
+
+.about-section {
+    display: none; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: calc(100vh - 80px); /* Adjust height to account for the navbar */
+    text-align: center; /* Center text alignment */
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 0 460px;
+}
+
+.about-section img {
+    width: 200px;
+    border-radius: 50%; /* Circular image */
+    border: 2px solid #480ca8; /* White border */
+}
+
+.projects-section {
+    display: none; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: calc(100vh - 80px); /* Adjust height to account for the navbar */
+    text-align: center; /* Center text alignment */
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 0 440px;
+}
+
+.projects-section img {
+    width: 600px;
+    border-radius: 5px;
+    border: 2px solid white; /* White border */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);;
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Hide overflowing content */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+    width: 100%;
+}
+
+.project {
+    flex: 0 0 100%; /* Each project takes up 100% of the carousel width */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.project a {
+    color: white;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 0px;
+}
+
+.right-arrow {
+    right: 0px;
+}
+
+.contact-section {
+    display: none; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: calc(100vh - 80px); /* Adjust height to account for the navbar */
+    text-align: center; /* Center text alignment */
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 0 460px;
+}
+
+.contact-icons {
+    border-bottom: 1px solid white; /* White border */
+    padding-bottom: 20px;
+}
+
+.contact-icons img {
+    width: 40px;
+    margin: 0 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add spacing between form elements */
+    width: 600px; /* Limit the form width */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white; /* Label text color */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background */
+    color: #333; /* Text color */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inset shadow */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #480ca8; /* Highlight border on focus */
+    box-shadow: 0 0 5px rgba(72, 12, 168, 0.5); /* Glow effect */
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #480ca8; /* Button background color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3a0a8c; /* Darker shade on hover */
+}
+
+.contact-form button:active {
+    background-color: #2e086b; /* Even darker shade on click */
+}
+
+.contact-form textarea {
+    resize: none; /* Disable resizing */
+}
+
+.contact-form p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 10px;
+}
