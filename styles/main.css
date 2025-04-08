@@ -278,3 +278,87 @@ body {
     color: white;
     margin-top: 10px;
 }
+
+@media (max-width: 1400px) {
+    .navbar-container {
+        margin: 0; /* Remove horizontal margin on mobile */
+    }
+    .about-section {
+        padding: 0 300px; /* Reduce padding on mobile */
+    }
+    .contact-section {
+        padding: 0 360px; /* Reduce padding on mobile */
+    }
+    .projects-section {
+        padding: 0 300px; /* Reduce padding on mobile */
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar-container {
+        margin: 0; /* Remove horizontal margin on mobile */
+    }
+    .about-section {
+        padding: 0 200px; /* Reduce padding on mobile */
+    }
+    .contact-section {
+        padding: 0 260px; /* Reduce padding on mobile */
+    }
+    .contact-form {
+        width: 500px; /* Full width on mobile */
+    }
+    .projects-section {
+        padding: 0 200px; /* Reduce padding on mobile */
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar-container {
+        margin: 0; /* Remove horizontal margin on mobile */
+    }
+    .logos-container {
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 10px;
+        row-gap: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .about-section {
+        padding: 0 100px; /* Reduce padding on mobile */
+    }
+    .contact-section {
+        padding: 0 100px; /* Reduce padding on mobile */
+    }
+    .projects-section {
+        padding: 0 100px; /* Reduce padding on mobile */
+    }
+    .contact-form {
+        width: 500px; /* Full width on mobile */
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar-container {
+        margin: 0; /* Remove horizontal margin on mobile */
+    }
+    .logos-container {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        row-gap: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .about-section {
+        padding: 0; /* Reduce padding on mobile */
+    }
+    .contact-section {
+        padding: 0; /* Reduce padding on mobile */
+    }
+    .projects-section {
+        padding: 0; /* Reduce padding on mobile */
+    }
+    .contact-form {
+        width: 400px; /* Full width on mobile */
+    }
+}
+
