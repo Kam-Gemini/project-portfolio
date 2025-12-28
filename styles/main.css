@@ -128,12 +128,28 @@ body {
 }
 
 .projects-section img {
+    box-sizing: border-box;
     width: 650px;
-    height:370px;
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid white; /* White border */
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+    width: 650px;
+    height: 370px;
+    border-radius: 8px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+    overflow: hidden; /* clips image cleanly */
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .projects-section a {
